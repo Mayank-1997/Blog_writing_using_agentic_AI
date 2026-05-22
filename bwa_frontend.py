@@ -18,6 +18,10 @@ import streamlit as st
 from bwa_backend import app
 
 
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+os.environ["TAVILY_API_KEY"] = st.secrets["TAVILY_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+
 # -----------------------------
 # Helpers
 # -----------------------------
